@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Loading = styled.div`
   color: #fff;
@@ -90,4 +90,24 @@ export const IssueList = styled.ul`
       }
     }
   }
+`;
+
+export const IssueHeader = styled.div`
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top:15px;
+  label,select,button,span {
+    margin-right:5px;
+  }
+
+  button{
+    &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  }
+
+
 `;
